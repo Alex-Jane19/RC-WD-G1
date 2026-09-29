@@ -3,33 +3,33 @@ body {
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-style: normal; 
-    font-size: 1em;
+    font-size: 16px;
 }
 
 header, nav, main, footer {
     margin: 20px;
 }
 
+h1, h2, h3 {
+    color: grey;
+}
+
 div {
-    padding: 40px;
+    font-size: 1em; 
 }
 
-.body {
-    background: linear-gradient(to right, rgb(100, 217, 100) 5%, rgb(64, 182, 49) 17%, rgb(43, 138, 30) 40%, rgb(8, 100, 7)
-85%, #045302f1 95%);
+span {
+    font-size: 1.6em; 
 }
 
-.negative {
-    background: linear-gradient(to left, rgb(105, 171, 215) -50%, rgb(71, 160, 219) -10%, rgb(34, 139, 209) 0%, rgb(0, 102, 170) 100%, rgb(1, 66, 109) 150%);
+strong {
+    font-size: 1.6em;
 }
 
-.percents {
-    min-height: 128em;
-    background: linear-gradient(to bottom, rgb(132, 213, 158) 2em, rgb(105, 216, 140) 4em, rgb(78, 218, 122) 8em, rgb(49, 219, 103)
-16em, rgb(22, 220, 84) 32em, rgb(1, 178, 57) 64em, rgb(0, 117, 37) 128em);
+.footer-social {
+    
 }
 
-.radial {
-    background: radial-gradient(ellipse at top, #d79913f1, transparent),
-                radial-gradient(ellipse at bottom, #c60707, transparent);
+.list-unstyled {
+    list-style: none;
 }
