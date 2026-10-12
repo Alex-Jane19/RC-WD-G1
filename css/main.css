@@ -14,22 +14,6 @@ h1, h2, h3 {
     color: grey;
 }
 
-div {
-    font-size: 1em; 
-}
-
-span {
-    font-size: 1.6em; 
-}
-
-strong {
-    font-size: 1.6em;
-}
-
-.footer-social {
-    
-}
-
 .list-unstyled {
     list-style: none;
 }
