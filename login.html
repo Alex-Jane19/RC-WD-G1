@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+    <script type="module" src="js/login.js"></script>
+</head>
+
+<body>
+
+    <main>
+        <section class="modal" id="loginModal">
+
+            <div class="modal-content">
+
+                <button type="button" class="close-btn" id="closeBtn">&times;</button>
+
+                <h2>Login</h2>
+
+                <form id="loginForm" class="form">
+
+                    <div class="wrapper-field">
+                        <div class="form-field">
+                            <label for="login">Login:</label>
+                            <input type="text" id="login" name="login" required>
+                        </div>
+                    </div>
+
+                    <div class="wrapper-field">
+                        <div class="form-field">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                    </div>
+
+                    <div class="remember-field">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                    </div>
+
+                    <div class="button-group">
+                        <button type="submit" class="login-btn">Login</button>
+                        <button type="button" class="cancel-btn" id="cancelBtn">Cancel</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <div id="welcomeMessage" class="welcome-message">
+            <h2>Welcome!</h2>
+            <p>You are successfully logged in.</p>
+        </div>
+
+    </main>
+
+</body>
+</html>

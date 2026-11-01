@@ -1,0 +1,162 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #8FFFC5 0%, #00D169 100%);
+}
+
+main {
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Modal window */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+/* Modal content */
+
+.modal-content {
+    position: relative;
+    max-width: 500px;
+    width: 90%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    color: #004724;
+}
+
+h2 {
+    text-align: center;
+    color: #00753B;
+    font-size: 2rem;
+    margin: 0 auto 30px;
+}
+
+/* Close button */
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: auto;
+    padding: 0 8px;
+    background: none;
+    color: #555;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Form fields */
+
+.wrapper-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    width: 30%;
+    font-weight: 600;
+}
+
+.form-field input {
+    flex-grow: 1;
+    min-width: 0;
+    padding: 10px;
+    margin: 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-field input:focus {
+    border-color: #00D169;
+    box-shadow: 0 0 5px rgba(0, 209, 105, 0.5);
+    outline: none;
+}
+
+/* Remember me */
+
+.remember-field {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.remember-field input {
+    accent-color: #00D169;
+}
+
+.remember-field label {
+    width: auto;
+}
+
+/* Buttons */
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group button {
+    flex: 1;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.login-btn {
+    background: linear-gradient(135deg, #2EFF96 0%, #00D169 100%);
+}
+
+.cancel-btn {
+    background: #777;
+}
+
+.button-group button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Welcome message */
+
+.welcome-message {
+    display: none;
+    text-align: center;
+    padding: 40px;
+    color: #004724;
+}
