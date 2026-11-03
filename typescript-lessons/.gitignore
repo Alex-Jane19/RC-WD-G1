@@ -1,0 +1,14 @@
+# Dependencies
+node_modules/
+
+# Compiled JavaScript
+dist/
+
+# Test coverage
+coverage/
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Logs
+*.log
