@@ -6,4 +6,11 @@ export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   prettier,
+  {
+    languageOptions: {
+      globals: {
+        console: 'readonly',
+      },
+    },
+  },
 ];
