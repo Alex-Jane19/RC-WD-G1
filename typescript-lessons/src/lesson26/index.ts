@@ -99,7 +99,7 @@ class CanvasNode4 {
     this.#y = position?.y ?? 0;
   }
 
-    // `position` getter method here
+    // position getter method here
     get position(): { x: number; y: number } {
         return {
             x: this.#x,
@@ -113,7 +113,7 @@ class CanvasNode4 {
     this.#y = y;        
     }
 
-    // position` setter method here
+    // position setter method here
     set position(value: { x: number; y: number }) {
         this.#x = value.x;
         this.#y = value.y;
