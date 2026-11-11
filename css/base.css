@@ -1,0 +1,13 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    font-size: 16px;
+}
+
+header, nav, main, footer, aside {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: grey;
+}

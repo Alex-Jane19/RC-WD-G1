@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    font-style: normal; 
+    font-size: 16px;
+}
+
+header, nav, main, footer, aside, section {
+    margin: 20px;
+}
+
+h1, h2, h3 {
+    color: grey;
+}
+
+.list-unstyled {
+    list-style: none;
+}
