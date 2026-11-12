@@ -2,6 +2,6 @@
 
 This repository contains my web development learning projects, organized into the following sections in chronological order:
 
-• **HTML & CSS Lessons**
-• **JavaScript Lessons**
-• **TypeScript Lessons**
+- **HTML & CSS Lessons**
+- **JavaScript Lessons**
+- **TypeScript Lessons**
