@@ -1,0 +1,16 @@
+/* global module */
+
+module.exports = {
+    entry: './src/index.js',
+    output: {
+        filename: 'index.js',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader'],
+            },
+        ],
+    },
+};
