@@ -5,3 +5,4 @@ This repository contains my web development learning projects, organized into th
 - **HTML & CSS Lessons**
 - **JavaScript Lessons**
 - **TypeScript Lessons**
+- **Angular Lessons**
