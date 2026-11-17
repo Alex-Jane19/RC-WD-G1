@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { UserProfile } from './user-profile/user-profile';
+import { DeveloperCard } from './developer-card/developer-card';
 
 @Component({
-  imports: [UserProfile],
+  imports: [DeveloperCard],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',

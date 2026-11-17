@@ -1,0 +1,17 @@
+<div class="developer-card">
+
+    <h2>{{ username }}</h2>
+    <p>{{ role }}</p>
+
+    <img [src]="avatarUrl" [alt]="username">
+
+    <p class="status">
+        <span class="status-icon" [class.offline]="!isOnline">{{ isOnline ? '✓' : '×' }}</span>
+        Status: {{ isOnline ? 'Online' : 'Offline' }}
+    </p>
+
+    <p>Skills: {{ skillsCount * 2 }}</p>
+
+    <button [disabled]="!isOnline">Send message</button>
+
+</div>
