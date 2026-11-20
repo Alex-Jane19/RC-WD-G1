@@ -1,0 +1,71 @@
+
+:host {
+  display: block;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 30px;
+  background-color: #174d38;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-info, .login-prompt {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-info span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.site-header button {
+  padding: 10px 18px;
+  background-color: #f0f7f2;
+  color: #174d38;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease,
+              transform 0.2s ease;
+}
+
+.site-header button:hover {
+  background-color: #d4e9da;
+  transform: translateY(-2px);
+}
+
+.site-header button:active {
+  transform: translateY(0);
+}
+
+.site-header button:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
