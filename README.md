@@ -1,4 +1,3 @@
-
 # RC-WD-G1 | Frontend Development
 
 ### My Frontend Development Learning Journey
@@ -6,6 +5,8 @@
 This repository documents my progress in frontend development, from HTML and CSS fundamentals to modern JavaScript frameworks.
 
 It contains practical exercises, coding assignments, and projects completed throughout the course.
+
+🌐 **Live Portfolio:** [View Website](https://alex-jane19.github.io/RC-WD-G1/)
 
 ## Technologies
 
@@ -19,7 +20,7 @@ It contains practical exercises, coding assignments, and projects completed thro
 
 ## Project Structure
 
-The repository is organized into the following sections in chronological learning order:
+The root `index.html` is the portfolio homepage. Learning materials are organized into the following sections in chronological order:
 
 - **HTML & CSS Lessons** — Page structure, styling, and layouts.
 - **JavaScript Lessons** — Programming fundamentals, DOM manipulation, asynchronous JavaScript, and APIs.
@@ -39,7 +40,8 @@ The repository is organized into the following sections in chronological learnin
 
 Explore the deployed exercises and projects:
 
-- [Angular Application](https://alex-jane19.github.io/RC-WD-G1/angular-lessons/my-first-app/dist/my-first-app/browser/)
+- [Portfolio Homepage](https://alex-jane19.github.io/RC-WD-G1/) — A responsive portfolio website built with HTML and CSS.
+- [Angular Application](https://alex-jane19.github.io/RC-WD-G1/angular-lessons/my-first-app/dist/my-first-app/browser/) — An Angular learning project featuring components, data binding, and conditional rendering.
 
 ---
 

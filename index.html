@@ -2,87 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="RC-WD-G1 — my frontend development portfolio, from HTML and CSS to Angular.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RC-WD-G1 project</title>
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-    <header>
-        <h1>RC-WD-G1 project</h1>
+<body id="top">
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="RC-WD-G1 — home">RC<span>.</span></a>
+
+        <nav aria-label="Main navigation">
+          <ul class="nav-list">
+            <li><a href="#top" aria-current="page">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+
+        <a class="header-github" href="https://github.com/Alex-Jane19/RC-WD-G1" target="_blank" rel="noopener noreferrer">
+          GitHub <span aria-hidden="true">↗</span>
+        </a>
+      </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="catalog.html">Catalog</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-    </nav>
-
     <main>
-        <section>
-            <h2>Welcome to the RC-WD-G1 project!</h2>
-            <p>This project is created to practice and develop skills in frontend</p>
-        </section>
+      <section class="hero container" aria-labelledby="hero-heading">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> FRONTEND DEVELOPMENT JOURNEY</p>
+        <h1 id="hero-heading">RC-WD-G1 project</h1>
+        <p class="hero-description">
+          A little space for my frontend development journey — from the first HTML and CSS pages
+          to JavaScript, TypeScript, and Angular projects. Learning by building, one step at a time.
+        </p>
+
+        <p class="currently">Currently learning: <strong>Angular</strong></p>
+      </section>
+
+      <section class="section section-muted" id="skills" aria-labelledby="skills-heading">
+        <div class="container">
+          <div class="section-heading-row">
+            <h2 id="skills-heading">Technologies &amp; tools</h2>
+          </div>
+
+          <ul class="skill-list" aria-label="Technologies and tools">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>Angular</li>
+            <li>Webpack</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section" id="progress" aria-labelledby="progress-heading">
+        <div class="container">
+          <div class="section-heading-row">
+            <h2 id="progress-heading">Learning progress</h2>
+          </div>
+
+          <ul class="progress-list">
+            <li>
+              <span class="progress-name"><span class="progress-check" aria-hidden="true">✓</span>HTML &amp; CSS Fundamentals</span>
+              <span class="status status-done">Completed</span>
+            </li>
+            <li>
+              <span class="progress-name"><span class="progress-check" aria-hidden="true">✓</span>JavaScript Fundamentals</span>
+              <span class="status status-done">Completed</span>
+            </li>
+            <li>
+              <span class="progress-name"><span class="progress-check" aria-hidden="true">✓</span>TypeScript Fundamentals</span>
+              <span class="status status-done">Completed</span>
+            </li>
+            <li>
+              <span class="progress-name"><span class="progress-check" aria-hidden="true">✓</span>Webpack Basics</span>
+              <span class="status status-done">Completed</span>
+            </li>
+            <li>
+              <span class="progress-name"><span class="progress-working" aria-hidden="true">↻</span>Angular</span>
+              <span class="status status-active">In progress</span>
+            </li>
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="section section-muted" id="projects" aria-labelledby="projects-heading">
+        <div class="container">
+          <div class="section-heading-row">
+            <h2 id="projects-heading">Live projects</h2>
+          </div>
+
+          <div class="project-list">
+            <article class="project-row">
+              <div class="project-info">
+                <h3>Github / Repository</h3>
+                <p>All lessons and experiments, collected in one place.</p>
+              </div>
+              <a class="project-link" href="https://github.com/Alex-Jane19/RC-WD-G1" target="_blank" rel="noopener noreferrer">
+                View repository <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+
+            <article class="project-row">
+              <div class="project-info">
+                <h3>My First Angular App</h3>
+                <p>Components, templates, bindings, and conditional rendering.</p>
+              </div>
+              <a class="project-link" href="./angular-lessons/my-first-app/dist/my-first-app/browser/">
+                View live project <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+            
+          </div>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <section id="footer-info"></section>
-            <div>
-                <h3>About</h3>
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Pricing</a></li>
-                        <li><a href="#">Customers</a></li>
-                        <li><a href="#">Careers</a></li>
-                    </ul>
-            </div>
-
-            <div>
-                <h3>Resources</h3>
-                    <ul>
-                        <li><a href="#">Docs</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">eBooks</a></li>
-                        <li><a href="#">Webinars</a></li>
-                    </ul>
-            </div>
-
-            <div>
-                <h3>Contacts</h3>
-                    <ul>
-                        <li><a href="#">Help</a></li>
-                        <li><a href="#">Sales</a></li>
-                        <li><a href="#">Advertise</a></li>
-                    </ul>
-            </div>
-        </section>
-
-        <section class="footer-social">
-            <h3>Social media</h3>
-            <ul class="list-unstyled">
-                <li><a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://twitter.com/"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/"><i class="fab fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://www.youtube.com/"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-            </ul>
-        </section>
-
-        <section id="footer-legal">
-            <ul>
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="h2">&copy; 2026 RC-WD-G1 project. All rights reserved.</p>
-        </section>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p><strong>RC-WD-G1</strong> · Learning, building, improving.</p>
+        <p>© 2026 RC-WD-G1 <span aria-hidden="true">·</span> <a href="#top">Back to top ↑</a></p>
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
