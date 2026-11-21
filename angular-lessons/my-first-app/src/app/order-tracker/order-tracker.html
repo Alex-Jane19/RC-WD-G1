@@ -1,0 +1,71 @@
+
+<section class="order-bar">
+  <div class="order-info">
+    <h2>Order Tracker</h2>
+
+<p class="status-line" [class]="orderStatus" role="status">
+
+  <span class="status-dot" aria-hidden="true"></span>
+
+  @switch (orderStatus) {
+    @case ('pending') {
+      <span>Awaiting confirmation</span>
+    }
+
+    @case ('shipping') {
+      <span>Your order is on its way</span>
+    }
+
+    @case ('delivered') {
+      <span>Your order has been delivered</span>
+    }
+
+    @case ('cancelled') {
+      <span>Your order has been cancelled</span>
+    }
+  }
+</p>
+
+
+  </div>
+
+
+<div class="order-actions">
+  <button
+    type="button"
+    class="pending-btn"
+    (click)="changeStatus('pending')"
+    [class.active]="orderStatus === 'pending'"
+  >
+    Pending
+  </button>
+
+  <button
+    type="button"
+    class="shipping-btn"
+    (click)="changeStatus('shipping')"
+    [class.active]="orderStatus === 'shipping'"
+  >
+    Shipping
+  </button>
+
+  <button
+    type="button"
+    class="delivered-btn"
+    (click)="changeStatus('delivered')"
+    [class.active]="orderStatus === 'delivered'"
+  >
+    Delivered
+  </button>
+
+  <button
+    type="button"
+    class="cancelled-btn"
+    (click)="changeStatus('cancelled')"
+    [class.active]="orderStatus === 'cancelled'"
+  >
+    Cancelled
+  </button>
+</div>
+
+</section>

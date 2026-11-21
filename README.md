@@ -25,7 +25,8 @@ The root `index.html` is the portfolio homepage. Learning materials are organize
 - **HTML & CSS Lessons** — Page structure, styling, and layouts.
 - **JavaScript Lessons** — Programming fundamentals, DOM manipulation, asynchronous JavaScript, and APIs.
 - **TypeScript Lessons** — Types, interfaces, classes, generics, modules, and Webpack.
-- **Angular Lessons** — Components, templates, data binding, and event handling.
+- **Angular Lessons** — Components, templates, data binding, event handling, conditional rendering, dynamic styling, and interactive UI elements.
+
 
 ## Learning Progress
 
@@ -41,7 +42,8 @@ The root `index.html` is the portfolio homepage. Learning materials are organize
 Explore the deployed exercises and projects:
 
 - [Portfolio Homepage](https://alex-jane19.github.io/RC-WD-G1/) — A responsive portfolio website built with HTML and CSS.
-- [Angular Application](https://alex-jane19.github.io/RC-WD-G1/angular-lessons/my-first-app/dist/my-first-app/browser/) — An Angular learning project featuring components, data binding, and conditional rendering.
+- [Angular Application](https://alex-jane19.github.io/RC-WD-G1/angular-lessons/my-first-app/dist/my-first-app/browser/) — An interactive Developer Portal featuring user profiles, expandable details, order status tracking, dynamic CSS styling, and responsive components.
+
 
 ---
 

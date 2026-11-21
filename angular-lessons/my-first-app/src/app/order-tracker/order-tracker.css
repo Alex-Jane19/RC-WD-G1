@@ -1,0 +1,128 @@
+
+:host {
+  display: block;
+  width: calc(100% - 16px);
+  max-width: none;
+  box-sizing: border-box;
+  margin: 24px auto;
+}
+
+.order-bar {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 16px 24px;
+  background-color: #ffffff;
+  border: 1px solid #e3e9e5;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.05);
+}
+
+.order-info h2 {
+  margin: 0 0 5px;
+  color: #194d3b;
+  font-size: 18px;
+}
+
+.order-info p {
+  margin: 0;
+  font-size: 12px;
+}
+
+.order-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.order-actions button {
+  padding: 9px 14px;
+  background-color: #f2f7f3;
+  color: #194d3b;
+  border: 1px solid #d6e5da;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 12px;
+  transition: background-color 0.2s;
+}
+
+.order-actions button:hover {
+  background-color: #e2eee5;
+}
+
+
+/* Pending - yellow */
+.order-actions button.pending-btn.active {
+  background-color: #9b6a10;
+  border-color: #9b6a10;
+  color: #ffffff;
+}
+
+/* Shipping - blue */
+.order-actions button.shipping-btn.active {
+  background-color: #347dbe;
+  border-color: #347dbe;
+  color: #ffffff;
+}
+
+/* Delivered - green */
+.order-actions button.delivered-btn.active {
+  background-color: #238363;
+  border-color: #238363;
+  color: #ffffff;
+}
+
+/* Cancelled - red */
+.order-actions button.cancelled-btn.active {
+  background-color: #b44747;
+  border-color: #b44747;
+  color: #ffffff;
+}
+
+
+.order-info .status-line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.status-dot {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex-shrink: 0;
+}
+
+.order-info .status-line.pending {
+  color: #ad7b12;
+}
+
+.order-info .status-line.shipping {
+  color: #347dbe;
+}
+
+.order-info .status-line.delivered {
+  color: #238363;
+}
+
+.order-info .status-line.cancelled {
+  color: #b44747;
+}
+
+
+
+@media (max-width: 700px) {
+  .order-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+}

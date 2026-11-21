@@ -12,6 +12,16 @@
 
     <p>Skills: {{ skillsCount * 2 }}</p>
 
-    <button [disabled]="!isOnline">Send message</button>
+    <button
+        type="button"
+        class="send-message-btn"
+        (click)="sendMessage()"
+        [disabled]="messageSent"
+        [class.sent]="messageSent"
+        >
+        {{ messageSent ? '✓ Message sent!' : 'Send message' }}
+    </button>
 
+    <app-profile-details></app-profile-details>
+    
 </div>

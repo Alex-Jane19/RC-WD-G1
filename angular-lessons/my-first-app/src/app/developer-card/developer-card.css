@@ -37,8 +37,33 @@
   cursor: pointer;
 }
 
+/* Smooth hover animation */
+.developer-card .send-message-btn {
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Hover effect */
+.developer-card .send-message-btn:not(:disabled):hover {
+  background-color: #185f47;
+  box-shadow: 0 5px 12px rgba(24, 95, 71, 0.17);
+  transform: translateY(-2px);
+}
+
+.send-message-btn.sent,
+.developer-card button.send-message-btn.sent:disabled {
+  background-color: #dceee2;
+  color: #185640;
+  border-color: #dceee2;
+  cursor: default;
+  opacity: 1;
+}
+
+
 .developer-card button:disabled {
-  background-color: #9ca3af;
+  background-color: #bcc2ce;
   cursor: not-allowed;
 }
 

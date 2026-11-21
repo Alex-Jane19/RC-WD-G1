@@ -1,0 +1,12 @@
+
+<button class="details-toggle" type="button" (click)="toggleDetails()">
+  {{ showDetails ? 'Hide details' : 'Show details' }}
+</button>
+
+@if (showDetails) {
+  <div class="profile-extra">
+    <p>Age: 30</p>
+    <p>Location: Ukraine</p>
+    <p>Technologies: Angular, TypeScript, JavaScript</p>
+  </div>
+}
